@@ -1,9 +1,3 @@
-/*
-Name: Sun Runze
-UoR ID: 33810887
-NUIST ID: 202483710021
-
- */
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
