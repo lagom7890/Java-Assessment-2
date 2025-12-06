@@ -67,14 +67,18 @@ public class SortComparison {
 
     static ArrayList<String> bubbleSort(ArrayList<String> array){
         for (int i = 0; i < array.size() - 1; i++){
+            boolean swapped = false;
             for (int j = 0; j < array.size() - 1 - i; j++){
                 if (cardCompare(array.get(j), array.get(j + 1)) == 1){
                     String temp = array.get(j);
                     array.set(j, array.get(j + 1));
                     array.set(j + 1, temp);
+                    swapped = true;
                 }
             }
-
+            if (!swapped){
+                break;
+            }
         }
         return array;
     }
